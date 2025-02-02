@@ -8,10 +8,15 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+       screens:{
+        mobile: '320px',
+        lg_mobile: '410px',
+        medium: '550px',
+        laptop : '820px',
+        lg_laptop : '900px',
+        xlg:'1200px'
+       },
+    
     },
   },
   plugins: [],
