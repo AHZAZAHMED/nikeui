@@ -89,10 +89,11 @@ const navbar = [
                 </button>
         
                 {/* Cart Icon */}
+                <Link href="/Cart">
                 <button>
                 <Image src={cart} alt='cart icon' className=' text-[#111111]' />
                 </button>
-
+                </Link>
                 <button onClick={handleNavbar} className='mobile:block laptop:hidden flex '>
                 <Image src={navbar_icon} alt='Navbar icon' className='w-8 h-8'></Image>
               </button>

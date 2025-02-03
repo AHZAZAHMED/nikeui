@@ -29,6 +29,7 @@ const AllProducts = () => {
                                price = {product.price}
                                colors={product.colors}
                                status={product.status}
+                               slug={product.slug.current}
                                /> 
             ))
           }

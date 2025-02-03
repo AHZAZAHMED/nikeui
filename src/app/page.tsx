@@ -19,43 +19,6 @@ import WomensProducts from "./components/WomensProducts/page";
 export default function Home() {
   
 
-const mens =[
-  {
-    ArticleImage : article1.src,
-    ArticleName : "Nike Dri-FIT ADV TechKnit Ultra",
-    ArticleCategory : "Men's Short-Sleeve",
-    ArticlePurpose : "Running Top",
-    ArticlePrice : "₹ 3 895",
-    id : '1'
-  },
-  {
-    ArticleImage : article1.src,
-    ArticleName : "Nike Dri-FIT Challenger",
-    ArticleCategory : "Men's 18cm (approx.) 2-",
-    ArticlePurpose : "in-1 Versatile Shorts",
-    ArticlePrice : "₹ 2 495",
-    id : '2'
-  }
-]
-const women =[
-  {
-    ArticleImage : article1.src,
-    ArticleName : "Nike Dri-FIT ADV Run Division",
-    ArticleCategory : "Women's Long-Sleeve",
-    ArticlePurpose : "Running Top",
-    ArticlePrice : "₹ 5 895",
-    id : '1'
-  },
-  {
-    ArticleImage : article1.src,
-    ArticleName : "Nike Fast",
-    ArticleCategory : "Women's Mid-Rise 7/8 Runing",
-    ArticlePurpose : "Leggings with pockets",
-    ArticlePrice : "₹ 3 795",
-    id : '2'
-  }
-]
-
 const listContent = [
   {
     Heading : "Icons",

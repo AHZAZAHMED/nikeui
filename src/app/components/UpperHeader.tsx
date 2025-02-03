@@ -26,11 +26,11 @@ import manlogo from '@/app/assets/man logo.png'
               Help
             </Link>
             <span className="border-l border-[#111111] h-4"></span>
-            <Link href="#" className="hover:underline">
+            <Link href="/JoinUs" className="hover:underline">
               Join Us
             </Link>
             <span className="border-l border-[#111111] h-4"></span>
-            <Link href="#" className="hover:underline">
+            <Link href="/LoginPage" className="hover:underline">
               Sign In
             </Link>
           </div>

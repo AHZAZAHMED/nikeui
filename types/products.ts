@@ -14,4 +14,8 @@ export interface Iproduct {
     colors : string[],
     status : string,
     description : string,
+    slug : {
+        _type : "slug"
+        current : string;
+    };
 }

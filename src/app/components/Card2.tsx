@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 
 interface ICard2Props {
@@ -8,13 +9,15 @@ interface ICard2Props {
     colors : string[];
     status : string;
     imageUrl: string;
+    slug :  string;
 }
 
 const Card2 = (Props:ICard2Props) => {
 
-    const { imageUrl ,productName ,category , price, status ,colors} = Props ;
+    const { slug,imageUrl ,productName ,category , price, status ,colors} = Props ;
 
   return (
+    <Link href={`components/product/${slug}`}>
     <div className='flex flex-col '>
         {/* article-pic-secction */}
         <Image width={350.36} height={300.36} src={imageUrl} alt='ArticleImage' className='bg-[#F3F3F3] hover:bg-[#f3f3f3ce] '></Image>
@@ -39,6 +42,7 @@ const Card2 = (Props:ICard2Props) => {
         </div>
 
     </div>
+    </Link>
   )
 }
 

@@ -27,10 +27,8 @@ const Shoes = () => {
                 imageUrl={product.image ? urlFor(product.image).url() : ''}
                 category = {product.category}
                 price = {product.price}
+                slug = {product.slug.current}
                 />
-
-                   
-                
             )
             )}
 

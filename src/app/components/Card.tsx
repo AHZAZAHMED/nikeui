@@ -1,17 +1,21 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
+import { Slug } from 'sanity';
 
 interface ICardProps {
     productName: string,
     category: string,
     price : number,
     imageUrl: string,
+    slug :  string;
 }
 const Card = (Props:ICardProps) => {
 
-    const { imageUrl ,productName ,category , price } = Props ;
+    const {slug, imageUrl ,productName ,category , price } = Props ;
 
   return (
+    <Link href={`components/product/${slug}`}>
     <div className='flex flex-col '>
         {/* article-pic-secction */}
         <Image width={330.36} height={300.36} src={imageUrl} alt='ArticleImage' className='bg-[#F3F3F3] hover:bg-[#f3f3f3ce] medium:w-[240px] sm:w-[270px] md:w-[220px] laptop:w-[250px] lg:w-[310.36px] xlg:w-[340.36px] xl:w-[360px]'></Image>
@@ -32,6 +36,7 @@ const Card = (Props:ICardProps) => {
         </div>
 
     </div>
+    </Link>
   )
 }
 

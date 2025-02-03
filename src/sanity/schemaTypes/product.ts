@@ -9,6 +9,14 @@ export const productSchema = {
         type: 'string',
       },
       {
+        name: "slug",
+        type: "slug",
+        title: "Slug",
+        options: {
+            source: "productName"
+        }
+      },
+      {
         name: 'category',
         title: 'Category',
         type: 'string',
@@ -47,14 +55,6 @@ export const productSchema = {
         title: 'Description',
         type: 'text',
       },
-      {
-        name: "slug",
-        type: "slug",
-        title: "slug",
-        option: {
-            source: "productName",
-            maxLength: 96,
-        }
-      }
+      
     ],
   }
