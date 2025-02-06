@@ -1,12 +1,9 @@
 import { client } from "@/sanity/lib/client";
 import { Iproduct } from "../../../../../types/products";
 import { groq } from "next-sanity";
-import ProductDetailsClient from "../../ProductDetailClient/page";
+import ProductDetailsClient from "../../ProductDetailClient";
 
 
-interface ProductPageProps {
-  params: Promise<{ slug: string }>;
-}
 
 async function getProduct(slug: string): Promise<Iproduct> {
   return client.fetch(
@@ -17,16 +14,14 @@ async function getProduct(slug: string): Promise<Iproduct> {
         image,
         price,
         description,
-        }`,
+    }`,
     { slug }
   );
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
-  const { slug } = await params;
+export default async function ProductPage({ params }: any) {
+  const { slug } = params; 
   const product = await getProduct(slug);
 
-  return (
-    <ProductDetailsClient product={product} />
-  );
+  return <ProductDetailsClient product={product} />;
 }

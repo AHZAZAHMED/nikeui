@@ -17,7 +17,7 @@ const AuthGuard = ({children} : {children : React.ReactNode}) =>{
     }else{
         setisLoading(false)
     }
- },[isSignedIn, router])
+ },[isSignedIn, router,pathname])
 
  if(isLoading) return <p>...Loading</p>
 

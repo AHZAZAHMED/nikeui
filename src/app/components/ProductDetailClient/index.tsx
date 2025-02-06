@@ -8,7 +8,10 @@ import { addToCart } from "@/app/actions/actions";
 import { Iproduct } from "../../../../types/products";
 import Swal from "sweetalert2";
 
-export default function ProductDetailsClient({ product }: { product: Iproduct }) {
+interface ProductDetailsClientProps {
+  product: Iproduct;
+}
+export default function ProductDetailsClient({ product }: ProductDetailsClientProps) {
   const handleAddToCart = (e: React.MouseEvent, product : Iproduct) => {
     e.preventDefault()
     Swal.fire({
