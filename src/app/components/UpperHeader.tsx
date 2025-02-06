@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 import manlogo from '@/app/assets/man logo.png'
-import { SignedOut } from '@clerk/nextjs'
+
 
 
  const UpperHeader = () => {

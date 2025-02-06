@@ -76,7 +76,7 @@ const JoinUs = () => {
 
            {/* Privacy Policy */}
         <p className="text-sm text-gray-500 text-center">
-          By logging in, you agree to Nike's
+          By logging in, you agree to Nike&apos;s
           <a
             href="#"
             className="text-black font-medium hover:underline mx-1"

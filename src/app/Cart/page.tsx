@@ -9,7 +9,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
 import AuthGuard from "../components/AuthGuard";
-import { SignedIn } from "@clerk/nextjs";
+
 
 
 const CartPage = () => {

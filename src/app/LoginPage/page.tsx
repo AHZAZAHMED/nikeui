@@ -29,7 +29,7 @@ useEffect(() => {
 
 <div className="flex flex-col items-center justify-center h-screen bg-gray-50">
   <Image
-    src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" // Replace with your Nike logo if needed
+    src="{logo}" // Replace with your Nike logo if needed
     alt="Nike Logo"
     className="h-16 mb-8"
   />

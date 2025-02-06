@@ -1,7 +1,7 @@
 import { useUser } from "@clerk/nextjs"
 import { usePathname, useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
-import CartPage from "../Cart/page"
+
 
 const AuthGuard = ({children} : {children : React.ReactNode}) =>{
  const [isLoading, setisLoading] = useState(true)

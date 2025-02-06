@@ -1,4 +1,4 @@
-import { createClient } from "next-sanity";
+import { createClient, QueryParams } from "next-sanity";
 
 const client = createClient({
     projectId : "y12zq53j",
@@ -8,6 +8,6 @@ const client = createClient({
 })
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
-export async function sanityFetch({query , params = {}}: {query:string , params: any}){
+export async function sanityFetch({query , params = {}}: {query:string , params?: QueryParams}){
     return await client.fetch(query, params)
 }
