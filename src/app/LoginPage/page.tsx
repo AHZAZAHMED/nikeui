@@ -29,7 +29,7 @@ useEffect(() => {
 
 <div className="flex flex-col items-center justify-center h-screen bg-gray-50">
   <Image
-    src="{logo}" // Replace with your Nike logo if needed
+    src={logo} // Replace with your Nike logo if needed
     alt="Nike Logo"
     className="h-16 mb-8"
   />
