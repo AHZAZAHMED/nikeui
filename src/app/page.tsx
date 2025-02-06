@@ -1,10 +1,5 @@
 import Image from "next/image";
-import UpperHeader  from "./components/UpperHeader";
-import LowerHeader from "./components/LowerHeader";
 import Hero from "./components/Hero";
-import article1 from "@/app/assets/article1.png"
-import article2 from "@/app/assets/article2.png"
-import Card from "./components/Card";
 import rightArrow from "@/app/assets/right-arrow.png"
 import leftArrow from "@/app/assets/left-arrow-key.png"
 import Hero2 from "./components/Hero2";
@@ -97,7 +92,7 @@ const listContent = [
       {/* left cards */}
       <div className="px-4 flex mobile:flex-col  mobile:items-center medium:items-end ">
       <div className="space-x-2 justify-end  flex mobile:items-center  mb-2 pt-4">
-        <span className="">Shop Men's</span>
+        <span className="">Shop Men&apos;s</span>
         <button className="text-black bg-[#f5f5f5] hover:bg-[#dfdfdf] rounded-full mobile:p-3 p-4 ">
           <Image width={15} src={leftArrow} alt="navigation key"></Image>
         </button>
@@ -113,7 +108,7 @@ const listContent = [
       {/* Right Cards */}
       <div className="px-4 flex mobile:flex-col  mobile:items-center medium:items-end">
       <div className="space-x-2 justify-end  flex mobile:items-center pt-3">
-        <span>Shop Women's</span>
+        <span>Shop Women&apos;s</span>
         <button className="text-black bg-[#f5f5f5] hover:bg-[#dfdfdf] rounded-full p-4">
           <Image width={15} src={leftArrow} alt="navigation key"></Image>
         </button>

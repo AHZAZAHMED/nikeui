@@ -6,6 +6,7 @@ const client = createClient({
     useCdn : true,
     apiVersion : "2023-10-10"
 })
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 
 export async function sanityFetch({query , params = {}}: {query:string , params: any}){
     return await client.fetch(query, params)

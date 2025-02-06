@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { Iproduct } from "../../../../types/products";
 import { client } from "@/sanity/lib/client";
-import { allProduct, fourProduct } from "@/sanity/lib/queries";
+import {  fourProduct } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
-import Image from "next/image";
+
 import Card from "../Card";
 
 const Shoes = () => {

@@ -7,6 +7,9 @@ import { Iproduct } from "../../../types/products";
 import { getCartItems, removeFromCart, updateCartQuantity } from "../actions/actions";
 import { urlFor } from "@/sanity/lib/image";
 import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
+import AuthGuard from "../components/AuthGuard";
+import { SignedIn } from "@clerk/nextjs";
 
 
 const CartPage = () => {
@@ -67,7 +70,7 @@ const CartPage = () => {
 
 
 
-  
+  const router = useRouter();
   const handleProceed = () =>{
       Swal.fire({
           title: "Proceed to checkout?",
@@ -79,13 +82,15 @@ const CartPage = () => {
           confirmButtonText: "Yes, proceed!"
       }).then((result)=>{
           if(result.isConfirmed){
-              Swal.fire("Success" , "Your Order has been successfully processed", "success")
+              Swal.fire("Success" , "Your Order has been successfully processed", "success");
+              router.push("/checkout");
               setCartItems([])
           }
       })
   }
 
   return (
+    <AuthGuard>
     <div className="p-8 bg-gray-50 min-h-screen">
       <div className="max-w-5xl mx-auto grid grid-cols-3 gap-8">
         <div className="col-span-2">
@@ -164,6 +169,7 @@ const CartPage = () => {
         </div>
       </div>
     </div>
+    </AuthGuard>
   );
 };
 

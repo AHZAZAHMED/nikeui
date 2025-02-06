@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 import manlogo from '@/app/assets/man logo.png'
+import { SignedOut } from '@clerk/nextjs'
 
 
  const UpperHeader = () => {
@@ -26,12 +27,13 @@ import manlogo from '@/app/assets/man logo.png'
               Help
             </Link>
             <span className="border-l border-[#111111] h-4"></span>
-            <Link href="/JoinUs" className="hover:underline">
+            <Link href="/JoinUsPage" className="hover:underline">
               Join Us
             </Link>
             <span className="border-l border-[#111111] h-4"></span>
+            
             <Link href="/LoginPage" className="hover:underline">
-              Sign In
+           Login
             </Link>
           </div>
         </div>

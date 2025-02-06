@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
-import { Slug } from 'sanity';
+
 
 interface ICardProps {
     productName: string,

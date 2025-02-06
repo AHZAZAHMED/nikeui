@@ -31,12 +31,6 @@ const Footer = () => {
     {content : "Sustainability", id  : '4'},
    ]
 
-   const container4 = [
-    {link : "twitter_icon", id  : '1'},
-    {link : "facebook_icon", id  : '2'},
-    {link : "youtube_icon", id  : '3'},
-    {link : "instagram_icon", id  : '4'},
-   ]
   return (
     <div className='bg-black px-8'>
     {/* upper portion */}

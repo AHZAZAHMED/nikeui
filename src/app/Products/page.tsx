@@ -1,7 +1,4 @@
 import React from 'react'
-import Card2 from '../components/Card2'
-import filter from "@/app/assets/filter.png"
-import Image from 'next/image'
 import AllProducts from '../components/AllProducts/page'
 
 const Products = () => {
