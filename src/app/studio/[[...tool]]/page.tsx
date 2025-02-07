@@ -9,11 +9,18 @@
 
 import { NextStudio } from 'next-sanity/studio'
 import config from '../../../../sanity.config'
+import { auth } from '@clerk/nextjs/server';
 
 export const dynamic = 'force-static'
 
 export { metadata, viewport } from 'next-sanity/studio'
 
-export default function StudioPage() {
+export default async function StudioPage() {
+  const authResult = await auth();
+  console.log(authResult); // Check what properties are available
+const { userId } = authResult;
+  if (!userId) {
+    return <div>Unauthorized - Please log in to access the Studio.</div>;
+  }
   return <NextStudio config={config} />
 }
